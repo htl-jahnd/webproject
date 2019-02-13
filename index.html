@@ -1,52 +1,47 @@
 <!doctype html>
 <html lang="en" class="no-js">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
-
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap CSS-->
+
+	<script src="js/jquery-2.1.1.js"></script> <!-- Resource jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	 crossorigin="anonymous"></script> <!-- Resource Propper -->
+	<script src="js/bootstrap.min.js"></script> <!-- Resource Bootstrap -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-  	
-	<title>Vertical Fixed Navigation</title>
+	<script src="js/form-validation.js"></script> <!-- Resource Form Validation -->
+	<title>Easysites</title>
 </head>
+
 <body>
 	<nav id="cd-vertical-nav">
 		<ul>
 			<li>
-				<a href="#section1" data-number="1">
+				<a href="#header_section" data-number="1">
 					<span class="cd-dot"></span>
-					<span class="cd-label">Intro</span>
+					<span class="cd-label">Home</span>
 				</a>
 			</li>
 			<li>
-				<a href="#section2" data-number="2">
+				<a href="#featuresSection" data-number="2">
 					<span class="cd-dot"></span>
-					<span class="cd-label">About</span>
+					<span class="cd-label">Angebot</span>
 				</a>
 			</li>
 			<li>
-				<a href="#section3" data-number="3">
-					<span class="cd-dot"></span>
-					<span class="cd-label">Features</span>
-				</a>
-			</li>
-			<li>
-				<a href="#section4" data-number="4">
-					<span class="cd-dot"></span>
-					<span class="cd-label">Portfolio</span>
-				</a>
-			</li>
-			<li>
-				<a href="#section5" data-number="5">
+				<a href="#section5" data-number="3">
 					<span class="cd-dot"></span>
 					<span class="cd-label">Pricing</span>
 				</a>
 			</li>
 			<li>
-				<a href="#section6" data-number="6">
+				<a href="#contact-section" data-number="4">
 					<span class="cd-dot"></span>
 					<span class="cd-label">Contact</span>
 				</a>
@@ -54,33 +49,172 @@
 		</ul>
 	</nav>
 	<a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a>
+	<section id="header_section" class="cd-section">
+		<h1 id="header_heading">Easysites</h1>
 
-	<section id="section1" class="cd-section">
-		<h1>Vertical Fixed Navigation</h1>
-		<a href="#section2" class="cd-scroll-down cd-img-replace">scroll down</a>
+		<p id="header_lead">
+			Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+		</p>
+		<a href="#featuresSection" class="cd-scroll-down cd-img-replace">scroll down</a>
 	</section><!-- cd-section -->
 
-	<section id="section2" class="cd-section">
-		<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
+
+	<section id="featuresSection" class="cd-section">
+		<!--Feautures section-->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12 section-heading">
+					<h1>Was wir anbieten</h1>
+				</div>
+				<div class="col-md-12 section-heading">
+					<h2>Moderne Technologien</h2>
+				</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<h3 class="secondHeader">HTML 5</h3>
+					<img src="./img/html_logo.png" class="rounded logoImage-md-4" alt="HTML Logo">
+					<p class="features-text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum
+						perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur,
+						id
+						cum.
+					</p>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<h3 class="secondHeader">CSS 3</h3>
+					<img src="./img/css_logo.png" class="rounded logoImage-md-4" alt="CSS Logo">
+					<p class="features-text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum
+						perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur,
+						id
+						cum.
+					</p>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<h3 class="secondHeader">JavaScript</h3>
+					<img src="./img/js_logo.png" class="rounded logoImage-md-4" alt="JavaScript Logo">
+					<p class="features-text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum
+						perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur,
+						id
+						cum.
+					</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12 section-heading">
+					<h2>Professionelle Services</h2>
+				</div>
+
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<h3 class="secondHeader">Webserver</h3>
+					<img src="./img/nodejs_logo.png" class="rounded logoImage-md-6" alt="HTML Logo">
+					<p class="features-text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum
+						perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur,
+						id
+						cum.
+					</p>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<h3 class="secondHeader">Hosting</h3>
+					<img src="./img/server_logo.png" class="rounded logoImage-md-6" alt="CSS Logo">
+					<p class="features-text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum
+						perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur,
+						id
+						cum.
+					</p>
+				</div>
+			</div>
+		</div>
 	</section><!-- cd-section -->
 
-	<section id="section3" class="cd-section">
-		<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
-	</section><!-- cd-section -->
 
-	<section id="section4" class="cd-section">
-		<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
-	</section><!-- cd-section -->
 
 	<section id="section5" class="cd-section">
-		<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
+		<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum
+			perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id
+			cum.&rdquo;</p>
 	</section><!-- cd-section -->
 
-	<section id="section6" class="cd-section">
-		<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
+	<section id="contact-section" class="cd-section">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12 section-heading">
+					<h1>Kontakt</h1>
+				</div>
+			</div>
+			<form id="contact-form" role="form">
+				<div class="messages"></div>
+				<div class="controls">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="form_name">Vorname *</label>
+								<input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *"
+								 data-require-error="Name is required" required>
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="form_lastname">Nachname *</label>
+								<input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *"
+								 data-require-error="Name is required" required>
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="form_email">Email Adresse *</label>
+								<input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *"
+								 data-require-error="Email is required" required data-pattern-error="Invalid email format">
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="form_need">Ihr Bedarf *</label>
+								<select id="form_need" name="need" class="form-control">
+									<option selected disabled hidden style='display: none' value=''></option>
+									<option value="General Information" selected>Allgemeine Informationen</option>
+									<option value="Request Order">Auftrag</option>
+									<option value="Other">Anderes</option>
+								</select>
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group">
+								<label for="form_message">Nachricht *</label>
+								<textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4"
+								 data-require-error="Message is required" required>
+								</textarea>
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<input type="submit" id="submitButton" class="btn btn-success btn-send" value="Absenden">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<p class="text-muted">
+								<strong>*</strong> Plichtfelder</p>
+						</div>
+					</div>
+				</div>
+
+			</form>
+		</div>
 	</section><!-- cd-section -->
-	
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
+	<script src="js/main.js"></script>
 </body>
+
 </html>

@@ -8,7 +8,9 @@ html * {
   -moz-osx-font-smoothing: grayscale;
 }
 
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -17,11 +19,12 @@ html * {
 body {
   font-size: 100%;
   font-family: "Ubuntu", sans-serif;
-  color: #3e3947;
+  color: #212F3C;
   background-color: white;
 }
 
-body, html {
+body,
+html {
   height: 100%;
 }
 
@@ -32,6 +35,109 @@ a {
 
 img {
   max-width: 100%;
+}
+
+#header_section {
+  background: url("../img/header_background.png") no-repeat center center;
+}
+
+#header_heading {
+  font-size: 4rem;
+  top: 45%;
+  color:white;
+}
+
+#header_lead {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  color:white;
+  text-align: center;
+}
+
+h2{
+  margin-left:15%;
+}
+
+#featuresSection {
+  min-height: 200%;
+}
+
+.secondHeader {
+  position: absolute;
+  left: 33%;
+  right: auto;
+  display: block;
+  text-align: center;
+  width: 30%;
+  height: 30;
+}
+
+.features-text {
+  margin-top: block;
+  padding-left: 8%;
+  padding-right: 2%;
+  width: 90%;
+  height: 40%;
+  margin-top: 15rem;
+}
+
+.section-heading {
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+form {
+  box-shadow: 0 0px 13px rgba(60, 63, 125, 0.2);
+  padding: 20px 120px 20px 68px;
+  margin-bottom: 20px;
+}
+
+form .has-error .form-control {
+  background: url("../img/cross.png") no-repeat right 10px center;
+  color: #555;
+  background-color: rgb(253, 246, 246);
+  border: 2px solid #a94442;
+  border-radius: 4px;
+}
+
+form .has-success .form-control {
+  background: url("../img/tick.png") no-repeat right 10px center;
+  background-color: rgb(238, 245, 236);
+  border: 2px solid #bfdeaf;
+  border-radius: 4px;
+}
+
+.help-block {
+  color: #a94442;
+}
+
+.logoImage-md-6 {
+  align-content: center;
+  position: absolute;
+  left: 40%;
+  right: auto;
+  display: block;
+  margin-top: 5rem;
+  height: 120px;
+  width: 120px;
+}
+
+.logoImage-md-4 {
+  align-content: center;
+  position: absolute;
+  margin-left: 32%;
+  right: auto;
+  display: block;
+  margin-top: 5rem;
+  height: 120px;
+  width: 120px;
 }
 
 /* -------------------------------- 
@@ -57,19 +163,24 @@ Main components
   position: relative;
   padding: 2em 0;
 }
+
 .cd-section:nth-of-type(odd) {
   background-color: #3e3947;
 }
+
 .cd-section:nth-of-type(odd) p {
   color: #898099;
 }
+
 .cd-section:nth-of-type(even) {
-  background-color: #745360;
+  background-color: aliceblue;
 }
+
 .cd-section:nth-of-type(even) p {
   color: #bda3ad;
 }
-.cd-section h1, .cd-section p {
+
+.cd-section h1 {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -84,21 +195,24 @@ Main components
   max-width: 768px;
   text-align: center;
 }
+
 .cd-section h1 {
-  color: white;
   font-weight: 300;
   text-transform: uppercase;
   font-size: 20px;
   font-size: 1.25rem;
 }
+
 .cd-section p {
   line-height: 1.6;
 }
+
 @media only screen and (min-width: 768px) {
   .cd-section h1 {
     font-size: 30px;
     font-size: 1.875rem;
   }
+
   .cd-section p {
     font-size: 20px;
     font-size: 1.25rem;
@@ -138,20 +252,24 @@ Main components
   transform: translateY(-50%);
   z-index: 1;
 }
+
 .no-touch #cd-vertical-nav li {
   text-align: right;
 }
+
 .no-touch #cd-vertical-nav a {
   display: inline-block;
   /* prevent weird movements on hover when you use a CSS3 transformation - webkit browsers */
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
 .no-touch #cd-vertical-nav a:after {
   content: "";
   display: table;
   clear: both;
 }
+
 .no-touch #cd-vertical-nav a span {
   float: right;
   display: inline-block;
@@ -161,6 +279,7 @@ Main components
   -o-transform: scale(0.6);
   transform: scale(0.6);
 }
+
 .no-touch #cd-vertical-nav a:hover span {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -168,12 +287,15 @@ Main components
   -o-transform: scale(1);
   transform: scale(1);
 }
+
 .no-touch #cd-vertical-nav a:hover .cd-label {
   opacity: 1;
 }
+
 .no-touch #cd-vertical-nav a.is-selected .cd-dot {
   background-color: white;
 }
+
 .no-touch #cd-vertical-nav .cd-dot {
   position: relative;
   /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
@@ -191,6 +313,7 @@ Main components
   -o-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
 }
+
 .no-touch #cd-vertical-nav .cd-label {
   position: relative;
   margin-right: 10px;
@@ -221,6 +344,7 @@ Main components
   border-radius: 0.25em;
   background: rgba(255, 255, 255, 0.9);
 }
+
 .touch .cd-nav-trigger span {
   position: absolute;
   height: 4px;
@@ -237,7 +361,9 @@ Main components
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
-.touch .cd-nav-trigger span::before, .touch .cd-nav-trigger span::after {
+
+.touch .cd-nav-trigger span::before,
+.touch .cd-nav-trigger span::after {
   content: '';
   height: 100%;
   width: 100%;
@@ -246,9 +372,11 @@ Main components
   background-color: inherit;
   border-radius: inherit;
 }
+
 .touch .cd-nav-trigger span::before {
   top: -9px;
 }
+
 .touch .cd-nav-trigger span::after {
   bottom: -9px;
 }
@@ -282,17 +410,21 @@ Main components
   border-radius: 0.25em;
   background-color: rgba(255, 255, 255, 0.9);
 }
+
 .touch #cd-vertical-nav a {
   display: block;
   padding: 1em;
   border-bottom: 1px solid rgba(62, 57, 71, 0.1);
 }
+
 .touch #cd-vertical-nav a span:first-child {
   display: none;
 }
+
 .touch #cd-vertical-nav a.is-selected span:last-child {
   color: #d88683;
 }
+
 .touch #cd-vertical-nav.open {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -300,20 +432,25 @@ Main components
   -o-transform: scale(1);
   transform: scale(1);
 }
-.touch #cd-vertical-nav.open + .cd-nav-trigger {
+
+.touch #cd-vertical-nav.open+.cd-nav-trigger {
   background-color: transparent;
 }
-.touch #cd-vertical-nav.open + .cd-nav-trigger span {
+
+.touch #cd-vertical-nav.open+.cd-nav-trigger span {
   background-color: rgba(62, 57, 71, 0);
 }
-.touch #cd-vertical-nav.open + .cd-nav-trigger span::before, .touch #cd-vertical-nav.open + .cd-nav-trigger span::after {
+
+.touch #cd-vertical-nav.open+.cd-nav-trigger span::before,
+.touch #cd-vertical-nav.open+.cd-nav-trigger span::after {
   background-color: #3e3947;
   height: 3px;
   width: 20px;
   border-radius: 0;
   left: -8px;
 }
-.touch #cd-vertical-nav.open + .cd-nav-trigger span::before {
+
+.touch #cd-vertical-nav.open+.cd-nav-trigger span::before {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -321,7 +458,8 @@ Main components
   transform: rotate(45deg);
   top: 1px;
 }
-.touch #cd-vertical-nav.open + .cd-nav-trigger span::after {
+
+.touch #cd-vertical-nav.open+.cd-nav-trigger span::after {
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
@@ -329,12 +467,15 @@ Main components
   transform: rotate(135deg);
   bottom: 0;
 }
+
 .touch #cd-vertical-nav li:last-child a {
   border-bottom: none;
 }
 
 @media only screen and (min-width: 768px) {
-  .touch .cd-nav-trigger, .touch #cd-vertical-nav {
+
+  .touch .cd-nav-trigger,
+  .touch #cd-vertical-nav {
     bottom: 40px;
   }
 }

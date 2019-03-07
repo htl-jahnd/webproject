@@ -52,6 +52,10 @@ jQuery(document).ready(function ($) {
 	document.getElementById('contact-form').validateForm();
 });
 
+$(window).load(function () {
+	$("#loading").fadeOut("slow");
+});
+
 
 $('#submitButton').click((event) => {
 	if (validateForm) {
